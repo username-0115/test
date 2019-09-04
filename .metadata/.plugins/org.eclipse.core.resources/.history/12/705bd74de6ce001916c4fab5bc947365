@@ -1,0 +1,11 @@
+
+public class practice4 {
+
+	public static void main(String[] args) {
+		// 代入のイメージ
+		char char1 = 'A';
+		System.out.println(char1);
+
+	}
+
+}

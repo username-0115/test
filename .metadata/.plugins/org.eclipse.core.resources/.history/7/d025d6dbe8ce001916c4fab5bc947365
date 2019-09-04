@@ -1,0 +1,13 @@
+
+public class practice4 {
+
+	public static void main(String[] args) {
+		// 代入のイメージ
+		int a = 10;
+		if(a<20){
+			System.out.println("A");
+		}
+		
+	}
+
+}

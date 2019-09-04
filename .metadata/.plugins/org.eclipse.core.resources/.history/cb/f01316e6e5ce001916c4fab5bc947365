@@ -1,0 +1,11 @@
+
+public class practice4 {
+
+	public static void main(String[] args) {
+		// 代入のイメージ
+		String name = "鈴木";
+		System.out.println(name);
+
+	}
+
+}

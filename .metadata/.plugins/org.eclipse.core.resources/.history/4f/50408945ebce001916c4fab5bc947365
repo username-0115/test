@@ -1,0 +1,18 @@
+
+public class practice4 {
+
+	public static void main(String[] args) {
+		// 代入のイメージ
+		int a = 20;
+		
+		if(a>8){
+			System.out.println("A");
+		}else if(a==8){
+			System.out.printil("B");
+		}else{
+			System.out.println("C");
+		}
+		
+	}
+
+}
