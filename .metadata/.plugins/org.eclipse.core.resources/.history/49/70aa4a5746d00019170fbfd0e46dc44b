@@ -1,0 +1,13 @@
+
+public class practice10 {
+
+	public static void main(String[] args) {
+		// 配列
+		
+		String[]name = {"田中","高橋","斎藤"};
+		
+
+		System.out.println(name[0]);
+	}
+
+}

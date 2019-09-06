@@ -1,0 +1,15 @@
+
+public class practice10 {
+
+	public static void main(String[] args) {
+		// 配列
+		
+		String[]name = new String[30];
+		
+		name[0]="田中";
+		name[1]="高橋"
+		name[2]="斎藤"
+
+	}
+
+}

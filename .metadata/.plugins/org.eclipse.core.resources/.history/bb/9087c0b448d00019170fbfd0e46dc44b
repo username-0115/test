@@ -1,0 +1,16 @@
+
+public class practice10 {
+
+	public static void main(String[] args) {
+		// 配列
+		
+		String[][] country=
+			{
+					{"日本","タイ"},
+					{"アメリカ","ブラシル"},
+					{"フランス","ロシア"}
+			};
+		System.out.println(country[0][0]);
+	}
+
+}

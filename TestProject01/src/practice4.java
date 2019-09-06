@@ -3,20 +3,17 @@ public class practice4 {
 
 	public static void main(String[] args) {
 		// 代入のイメージ
-		int number = 88;
-		if(number<=100)
-			if(number<20){
-				System.out.println("未成年");
-			}else if(number == 77){
-				System.out.println("喜寿");
-			}else if(number == 88){
-				System.out.println("米寿");
-			}else{
-				System.out.println("成人");
-			}
-			}
-	
+		int a = 5 ;
 		
-	
-
+		switch(a){
+		case 0 :
+			System.out.println("aは0に等しい");
+			break;
+		case 1 :
+			System.out.println("aは1に等しい");
+			break;
+		default:
+			System.out.println("aは0でも1でもない");
+		}
+	    }
 }
