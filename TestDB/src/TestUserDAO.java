@@ -32,11 +32,11 @@ public class TestUserDAO {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void selectAll(){
 		DBConnector db=new DBConnector();
 		Connection con=db.getConnection();
-		
+
 		String sql="select * from test_table";
 		try{
 			PreparedStatement ps=con.prepareStatement(sql);
@@ -54,10 +54,11 @@ public class TestUserDAO {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void selectByName(String name) {
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
+
 		String sql ="select * from test_table where user_name=?";
 		try {
 		PreparedStatement ps = con.prepareStatement(sql);
@@ -76,13 +77,13 @@ public class TestUserDAO {
 		e.printStackTrace();
 		}
 		}
-	
-	
-	
+
+
+
 	public void selectByPassword(String password){
 		DBConnector db=new DBConnector();
 		Connection con=db.getConnection();
-		
+
 		String sql="select * from test_table where password=?";
 		try{
 			PreparedStatement ps=con.prepareStatement(sql);
@@ -98,14 +99,14 @@ public class TestUserDAO {
 		try{
 			con.close();
 		}catch(SQLException e){
-			e.printStackTrace();	
+			e.printStackTrace();
 			}
 		}
-	
+
 	public void updateUserNameByUserName(String oldName,String newName){
 		DBConnector db=new DBConnector();
 		Connection con=db.getConnection();
-		
+
 		String sql ="update test_table set user_name=? where user_name=?";
 		try{
 			PreparedStatement ps=con.prepareStatement(sql);
@@ -126,15 +127,15 @@ public class TestUserDAO {
 			e.printStackTrace();
 			}
 		}
-	
+
 	public void insert(int user_id,String name, String password) {
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
+
 		String sql ="insert into test_table values(?,?,?)";
 		try {
 		PreparedStatement ps = con.prepareStatement(sql);
 		ps.setInt(1, user_id);
-
 		ps.setString(2, name);
 		ps.setString (3, password);
 		int i=ps.executeUpdate();
@@ -150,13 +151,13 @@ public class TestUserDAO {
 		e.printStackTrace();
 		}
 	}
-	
+
 	public void delete(String name) {
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
+
 		String sql ="delete from test_table where user_name=?";
 		try {
-
 		PreparedStatement ps = con.prepareStatement(sql);
 		ps.setString(1, name);
 		int i=ps.executeUpdate();
