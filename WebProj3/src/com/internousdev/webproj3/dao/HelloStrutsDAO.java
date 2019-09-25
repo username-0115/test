@@ -24,7 +24,7 @@ public class HelloStrutsDAO {
 			} else{
 				dto.setResult("MySQLと接続できません。");
 			}
-		}catch(SQLException e){
+		} catch(SQLException e){
 			e.printStackTrace();
 		}
 		try{
