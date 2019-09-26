@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import com.internousdev.webproj3.dto.HelloStrutsDTO;
 import com.internousdev.webproj3.util.DBConnector;
 
-public class HelloStrutsDAO {
+public class HelloStrutsDAO{
 	public HelloStrutsDTO select(){
 		DBConnector db=new DBConnector();
 		Connection con=db.getConnection();
@@ -18,7 +18,6 @@ public class HelloStrutsDAO {
 		try{
 			PreparedStatement ps=con.prepareStatement(sql);
 			ResultSet rs=ps.executeQuery();
-
 			if(rs.next()){
 				dto.setResult("MySQLと接続できます。");
 			} else{

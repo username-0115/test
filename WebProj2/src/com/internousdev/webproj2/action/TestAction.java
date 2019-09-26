@@ -8,11 +8,8 @@ public class TestAction extends ActionSupport{
 	private String password;
 
 	public String execute(){
-		System.out.println("1");
 		String ret=ERROR;
-		TestDAO dao;
-		dao = new TestDAO();
-
+		TestDAO dao=new TestDAO();
 		int count=dao.insert(username, password);
 		if(count>0){
 			ret=SUCCESS;
