@@ -26,7 +26,7 @@ public class DBConnector {
 	private static String password="mysql";
 
 
-	public Connection getConection(){
+	public Connection getConnection(){
 		Connection con = null;
 		try{
 			Class.forName(driverName);
